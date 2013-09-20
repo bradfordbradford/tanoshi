@@ -63,7 +63,7 @@
     %section#site-content
 
         .content-background
-            %img{:src => "../assets/images/content/banner-3.jpg", :alt => "Tanoshi"}/
+            / %img{:src => "../assets/images/content/banner-3.jpg", :alt => "Tanoshi"}/
 
             %header.content-header
                 .content-header-inner
@@ -96,10 +96,12 @@
                     %a{:href => "location"} location
 
 
-
     %script{:rel => "javascript", :src => "https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"}
-    %script{:rel => "javascript", :src => "https://raw.github.com/srobbin/jquery-backstretch/master/jquery.backstretch.min.js"}
+    / %script{:rel => "javascript", :src => "https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"}
+
+    %script{:rel => "javascript", :src => "../assets/js/backstretch.js"}
+
     %script
-        $.backstretch("http://dl.dropbox.com/u/515046/www/garfield-interior.jpg");
+        $.backstretch("../assets/images/content/banner-3.jpg");
 
 
