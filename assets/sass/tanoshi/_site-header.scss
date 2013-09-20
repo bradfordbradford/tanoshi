@@ -1,0 +1,176 @@
+
+
+
+
+
+
+// Site Header -------------------
+section#site-header {
+    @include background-image-retina('../images/content/banner2', 'jpg', 1200px, 100px);
+    height: 120px;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+
+    &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        background: rgba(236, 0, 139, 0.2);
+        height: 24px;
+        bottom: -24px;
+        left: 0;
+    }
+
+    .site-header-inner {
+        @include row;
+    }
+
+}
+
+
+// Brand -------------------
+.brand-wrap {
+    background: $primary no-repeat;
+    width: 25%;
+    height: 100%;
+    display: inline-block;
+    overflow: hidden;
+    position: absolute;
+    left:0;
+}
+.brand {
+    display: block;
+    padding:28px 26px 38px 18px;
+
+    h1 {
+        text-indent: -9999px;
+        position: absolute;
+        top:0;
+    }
+
+}
+
+
+
+// Nav -------------------
+#site-nav {
+    float: right;
+    width: 75%;
+    bottom: 0;
+    position: absolute;
+    right: 0;
+    background: $secondary;
+
+
+    li {
+        display: inline-block;
+        list-style: none;
+        float:left;
+        width: 18%;
+
+        a {
+            color: white;
+            text-align: center;
+            line-height: 80px;
+            width: 100%;
+            display: block;
+            font-size: emCalc(14);
+            letter-spacing: .12em;
+
+            &.active, &:hover {
+                span {
+                    border-bottom: 1px solid white;
+                }
+            }
+        }
+    }
+
+    @include breakpoint(phones) {
+        li {
+            display: block;
+            border-bottom: 1px solid #C00071;
+        }
+    }
+}
+
+
+// Location -------------------
+.location {
+    width: 20%;
+    float: right;
+    background: $primary;
+
+    p {
+        margin: 0;
+        padding: 19px 16px;
+        color: white;
+        text-transform: uppercase;
+        font-size: emCalc(10);
+        letter-spacing: .12em;
+        text-align: center;
+        line-height: 15px;
+    }
+}
+
+
+
+// Media
+@include breakpoint(tablet-V) {
+    // Site Header
+    section#site-header {
+        height: auto;
+        position: relative;
+    }
+
+    // Brand
+    .brand-wrap {
+        width: 100%;
+        position: static;
+        overflow: visible;
+
+        .brand {
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+
+    // Site Nav
+    #site-nav {
+        float:none;
+        width: 100%;
+        position: static;
+
+        ul {
+            text-align: center;
+            padding-left: 0;
+
+            li {
+                width: auto;
+                float:none;
+                padding: 0 4px;
+
+                a {
+                    width: auto;
+                    line-height: emCalc(60);
+                }
+            }
+        }
+    }
+
+    // Location
+    .location {
+        display: none;
+    }
+
+
+}
+
+
+
+@include breakpoint(phones) {
+    section.site-header:after {
+        height: 0;
+    }
+}
+

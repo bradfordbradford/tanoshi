@@ -1,0 +1,198 @@
+
+
+
+
+
+
+// Site Header -------------------
+section#site-content {
+    @include clearfix();
+
+    .site-content-inner {
+        @include row;
+    }
+
+
+    article.content-copy-wrap {
+        @include span-columns(7, 12);
+
+        .content-copy {
+            padding: 44px 60px;
+            margin-bottom: 82px;
+        }
+    }
+
+    article.content-menu-wrap {
+        width: 54%;
+        margin: 0 auto;
+
+        .content-menu {
+            padding: 44px 60px;
+            margin-bottom: 82px;
+            text-align: center;
+        }
+
+        h3 {
+            margin:92px auto 48px;
+            font-weight: 500;
+        }
+
+        h4 {
+            font-family: $serif;
+        }
+    }
+
+    aside {
+        &.aside-background, &.aside-content-wrap{
+            @include span-columns(5 omega, 12);
+        }
+
+        .aside-content {
+            padding: 44px 60px 0px;
+            position: relative;
+            margin-bottom: 82px;
+        }
+
+        #map {
+            position: relative;
+            height: 400px;
+        }
+
+    }
+
+    // Media
+    @include breakpoint(tablet-V) {
+
+        article.content-copy-wrap, aside.aside-background, aside.aside-content-wrap {
+            @include span-columns(12, 12);
+        }
+
+        aside.aside-background img {
+            display: none;
+        }
+
+        article.content-copy-wrap .content-copy, aside .aside-content {
+            padding: 32px;
+            margin:0;
+        }
+
+        article.content-menu-wrap {
+            width: 100%;
+
+            .content-menu {
+                padding-top: 0;
+            }
+        }
+
+    }
+}
+
+// Content Backgroud
+.content-background {
+    overflow: hidden;
+    position: relative;
+    margin-top:70px;
+    min-height: 164px;
+    z-index: 0;
+
+    img {
+        margin: 40px auto -82px;
+        width: 100%;
+    }
+}
+
+
+
+
+// Content Headers
+header.content-header {
+    width: 100%;
+    background: $primary;
+    background: rgba(4, 66, 73, 0.35);
+    padding: 20px 15px;
+    @include clearfix;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    min-height: 124px;
+
+    .content-header-inner {
+        @include row;
+    }
+
+
+    h2 {
+        margin: 16px 0 ;
+        padding: 0;
+        color: white;
+        // @include span-columns(6 omega,12);
+        text-align: right;
+        position: absolute;
+        right:32px;
+        letter-spacing: .14em;
+    }
+
+    p {
+        color: white;
+        @include span-columns(7,12);
+        margin-left:32px;
+    }
+
+}
+
+@include breakpoint(tablet-V) {
+    header.content-header {
+        top: 70px;
+
+        h2 {
+            @include span-columns(12 omega,12);
+        }
+    }
+    .content-background {
+        margin-top:0;
+
+        img {
+            margin-top:0;
+        }
+    }
+}
+
+
+// Nav Controls for Sections
+.section-container {
+    .title {
+        top: -132px !important;
+    }
+    section.active {
+        padding-top: 0 !important;
+    }
+}
+
+a.title-control {
+
+    color: white;
+    font-family: $sans;
+    padding: 32px 60px;
+    line-height: 60px;
+    font-size: emCalc(14);
+    letter-spacing: .12em;
+
+    &.active, &:hover {
+        span {
+            border-bottom: 1px solid white;
+        }
+    }
+
+    @include breakpoint(tablet-V) {
+        position: relative;
+        left: 30px !important;
+        padding: 0;
+        top: 40px;
+        line-height: 30px;
+
+        &.street-food {
+            top: 64px;
+        }
+    }
+
+}

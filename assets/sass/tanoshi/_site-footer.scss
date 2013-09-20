@@ -1,0 +1,73 @@
+
+
+
+
+
+
+// Site Footer -------------------
+footer#site-footer {
+    @include background-image-retina('../images/content/banner1', 'jpg', 1600px, 100px);
+
+    .site-footer-inner {
+        @include row;
+        height: 100%;
+    }
+
+    // Site Map
+    .site-map {
+        background: $primary url('../images/logos-icons/circle+@2x.png') no-repeat 130px -60px;
+        background-size: 50%;
+        height: 100%;
+        padding: 16px;
+        @include span-columns(4 omega, 12);
+        list-style:none;
+
+        li {
+            margin: 2px 0;
+        }
+
+        a {
+            color: white;
+            text-align: right;
+            font-size: emCalc(12);
+
+            &:hover {
+                color:$highlight;
+            }
+        }
+    }
+
+
+    // Media
+    @include breakpoint(tablet-V) {
+        .site-map {
+            @include span-columns(6 omega, 12);
+            background-size: 64%;
+            width: 100%;
+        }
+    }
+}
+
+// Foot Notes
+.foot-notes {
+
+    // Location-Mobile
+    .location {
+        display: none;
+        background: transparent;
+        border-top: 1px solid $text-color;
+        width: 100%;
+        float:none;
+
+        p {
+            color:inherit;
+        }
+    }
+
+    // Media
+    @include breakpoint(tablet-V) {
+        .location {
+            display: inherit;
+        }
+    }
+}

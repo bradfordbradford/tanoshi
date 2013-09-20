@@ -1,0 +1,163 @@
+
+
+
+
+
+
+
+
+// For A World of Devices
+// ------------------------
+@mixin breakpoint($point) {
+  @if $point == large-monitors {
+    @media (min-width: 1250px) { @content; }
+  }
+  @else if $point == correct-Wide {
+    @media (max-width: 1080px)  { @content; }
+  }
+  @else if $point == tablet-H {
+    @media (max-width: 979px) { @content; }
+  }
+  @else if $point == tablet-V {
+    @media (max-width: 768px)  { @content; }
+  }
+
+  @else if $point == phones {
+    @media (max-width: 480px)  { @content; }
+  }
+}
+
+
+
+
+// Grid ------------------------------------
+$total-columns  : 12;             // a 12-column grid
+$column-width   : 4em;            // each column is 4em wide
+$gutter-width   : 1em;            // 1em gutters between columns
+$grid-padding   : $gutter-width;  // grid-padding equal to gutters
+
+
+
+
+
+// Type ------------------------------------
+a {
+    text-decoration: none;
+    @include transition(color .15s ease-in-out);
+    color: $text-color;
+    text-transform: uppercase;
+    font-weight: 600;
+
+    &:hover {
+        color: $highlight;
+    }
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: $sans;
+    text-transform: uppercase;
+    font-style:normal;
+}
+
+h2 {
+    font-size: emCalc(64);
+}
+
+
+h3 {
+    font-size: emCalc(54);
+    font-weight: 800;
+    letter-spacing: .16em;
+    margin: 32px 0 32px;
+}
+
+h4 {
+    font-size: emCalc(30);
+    font-weight: 800;
+    line-height: emCalc(20);
+    letter-spacing: .14em;
+    margin: 38px 0 16px;
+}
+
+p {
+    font-size: emCalc(16);
+    font-family: $serif;
+    margin: 16px 0 24px;
+    line-height: 1.32em;
+}
+
+p.sans {
+    font-weight: 600;
+    font-family: $sans;
+}
+
+p.emph {
+    font-size: emCalc(20);
+    margin: 12px 0;
+}
+
+// Horizontal Rule
+hr {
+  width: 32px;
+  border-color: $text-color;
+    margin: 0 auto;
+}
+
+// Article Specail Cases
+article, aside {
+    // Article Lists
+
+    a {
+        font-family: $serif;
+    }
+
+    ul li {
+        font-family: $serif;
+        margin: 4px 0 ;
+        line-height: 1.32em;
+    }
+
+}
+
+// Media
+@include breakpoint(tablet-V) {
+
+    h2 {
+        font-size: emCalc(32);
+    }
+
+    h3 {
+        font-size: emCalc(30);
+    }
+
+    h4 {
+        font-size: emCalc(18);
+    }
+
+    p {
+        font-size: emCalc(16);
+    }
+
+    p.emph {
+        font-size: emCalc(18);
+    }
+
+    article, aside ul li {
+        font-size: emCalc(14);
+    }
+
+}
+
+
+// Selection Settings
+body ::selection {
+color: #FFF;
+background-color: $text-color;
+}
+
+
+// button, .button { border-style: solid; border-width: 1px; cursor: pointer; font-family: inherit; font-weight: bold; line-height: 1; margin: 0 0 1.25em; position: relative; text-decoration: none; text-align: center; display: inline-block; padding-top: 0.75em; padding-right: 1.5em; padding-bottom: 0.8125em; padding-left: 1.5em; font-size: 1em; background-color: #5f5e5f; border-color: #454545; color: white; }
+
+
+
