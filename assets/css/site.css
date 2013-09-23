@@ -56,6 +56,8 @@ p.sans { font-weight: 600; font-family: "brandon-grotesque"; }
 
 p.emph { font-size: 1.25em; margin: 12px 0; }
 
+p.small { font-size: 0.875em; text-transform: uppercase; }
+
 hr { width: 32px; border-color: #222222; margin: 0 auto; }
 
 article a, aside a { font-family: "courier-prime"; }

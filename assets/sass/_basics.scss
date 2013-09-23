@@ -97,6 +97,10 @@ p.emph {
     margin: 12px 0;
 }
 
+p.small {
+    font-size: emCalc(14);
+    text-transform: uppercase;
+}
 
 // Horizontal Rule
 hr {
