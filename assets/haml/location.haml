@@ -15,12 +15,13 @@
     / Style
     %link{:rel => "stylesheet", :href => "../assets/css/site.css"}
     %link{:rel => "stylesheet", :href => "http://api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.css"}
-
-    /[if lt IE 9 ]
-        %link{:rel => "stylesheet", :href => "../assets/css/ie.css"}/
+    %link{:rel => "stylesheet", :href => "../assets/fonts/ss-social/webfonts/ss-social.css"}
 
     /[if lt IE 8 ]
         %link{:rel => "stylesheet", :href => "http://api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.ie.css"}/
+
+    /[if lt IE 9 ]
+        %link{:rel => "stylesheet", :href => "../assets/css/ie.css"}/
 
     / Scripts
     %script{:rel => "javascript", :src => "//use.typekit.net/hbf3urf.js"}
@@ -96,7 +97,7 @@
                         %li Turn left onto Commerce St
                         %li Destination will be on the right
 
-                    %br/ 
+                    %br/
 
                     %p
                         Directions from Arlington/Ft. Worth:
@@ -104,10 +105,10 @@
                     %ul
                         %li Head East on I30 towards Dallas
                         %li Take exit 45A on the left towards Commerce  St/Downtown
-                        %li Continue onto Commerce St 
+                        %li Continue onto Commerce St
                         %li Destination will be on the right
 
-                    %br/ 
+                    %br/
 
                     %p
                         Directions from Rockwall/Mesquite:
@@ -115,13 +116,13 @@
                     %ul
                         %li Head West on I30 towards Dallas
                         %li Take exit 47C to merge onto 1st Ave
-                        %li Continue onto Exposition Ave 
+                        %li Continue onto Exposition Ave
                         %li Turn left on to Canton St
                         %li Turn right onto Henry St
                         %li Turn right onto Commerce St
                         %li Destination will be on the right
 
-                    %br/ 
+                    %br/
 
                     %p
                         Directions from South Dallas:
@@ -133,7 +134,7 @@
                         %li Turn left onto S Pearl Expy
                         %li Take the 1st left onto Commerce St
                         %li Destination will be on the right
-                    
+
             %aside.aside-content-wrap
                 .aside-content
 
@@ -145,7 +146,7 @@
                         Dallas, Texas 75226
                         %br/
                         214.651.6800
-                        -# %br/ 
+                        -# %br/
                         -# info@tanoshiiramen.com
 
 
@@ -176,6 +177,12 @@
 
     %footer#site-footer
         .site-footer-inner
+            .social-list
+                %a.ss-icon{:href => "https://twitter.com/TanoshiiRamen", :target => "blank"} &#xF611;
+                %a.ss-icon{:href => "https://www.facebook.com/TanoshiRamenBar", :target => "blank"} &#xF610;
+                %a.ss-icon{:href => "http://instagram.com/tanoshiiramenbar/", :target => "blank"} &#xF641;
+                %a.ss-icon{:href => "mailto:info@tanoshiiramen.com", :target => "blank"} &#x2709;
+
             %ul.site-map
                 %li
                     %a{:href => "ramen"} ramen

@@ -7,13 +7,18 @@
     / Meta
     %meta{:charset => "UTF-8"}
     %title Tanoshi · Ramen Bar
-    %meta{:name=>"description", :content=>"If:Gather is…"}
-    %meta{:name=>"author", :content=>"If:Gather"}
+    %meta{:name=>"description", :content=>"Tanoshi is a Ramen Bar located in Dallas, TX"}
+    %meta{:name=>"author", :content=>"Tanoshi"}
     %meta{:name=>"viewport", :content=>"width=device-width,initial-scale=1"}
+    %link{:rel => "icon", :type => "images/png", :href => "../assets/images/logos-icons/favicon.png"}/
+
     / Style
     %link{:rel => "stylesheet", :href => "../assets/css/site.css"}
+    %link{:rel => "stylesheet", :href => "../assets/fonts/ss-social/webfonts/ss-social.css"}
+
     /[if lt IE 9 ]
         %link{:rel => "stylesheet", :href => "../assets/css/ie.css"}/
+
     / Scripts
     %script{:rel => "javascript", :src => "//use.typekit.net/hbf3urf.js"}
     %script
@@ -21,7 +26,7 @@
     %script{:rel => "javascript", :src => "../assets/js/modernizr.min.js"}
 
 
-%body
+%body.home
 
 
     %section#site-header
@@ -37,7 +42,7 @@
         %nav#site-nav
             %ul
                 %li
-                    %a.active{:href => "ramen.html"}
+                    %a{:href => "ramen.html"}
                         %span ramen
                 %li
                     %a{:href => "menu.html"}
@@ -62,14 +67,10 @@
 
     %section#site-content
 
-        .content-background
-            / %img{:src => "../assets/images/content/banner-3.jpg", :alt => "Tanoshi"}/
-
-            %header.content-header
-                .content-header-inner
-                    %p Dolore McSweeney's aesthetic, American Apparel dolor gentrify ea raw denim. Anim Austin pour-over church-key PBR McSweeney's. Post-ironic 3 wolf moon tousled, sriracha exercitation quis Marfa meggings Pitchfork master
-                    %h2 ramen
-
+    %header.content-header
+        .content-header-inner
+            %h2 ramen
+            %p Dolore McSweeney's aesthetic, American Apparel dolor gentrify ea raw denim. Anim Austin pour-over church-key PBR McSweeney's. Post-ironic 3 wolf moon tousled, sriracha exercitation quis Marfa meggings Pitchfork master
 
 
 
@@ -85,6 +86,13 @@
 
     %footer#site-footer
         .site-footer-inner
+
+            .social-list
+                %a.ss-icon{:href => "https://twitter.com/TanoshiiRamen", :target => "blank"} &#xF611;
+                %a.ss-icon{:href => "https://www.facebook.com/TanoshiRamenBar", :target => "blank"} &#xF610;
+                %a.ss-icon{:href => "http://instagram.com/tanoshiiramenbar/", :target => "blank"} &#xF641;
+                %a.ss-icon{:href => "mailto:info@tanoshiiramen.com", :target => "blank"} &#x2709;
+
             %ul.site-map
                 %li
                     %a{:href => "ramen"} ramen
@@ -97,8 +105,6 @@
 
 
     %script{:rel => "javascript", :src => "https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"}
-    / %script{:rel => "javascript", :src => "https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"}
-
     %script{:rel => "javascript", :src => "../assets/js/backstretch.js"}
 
     %script

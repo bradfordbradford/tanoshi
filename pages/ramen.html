@@ -11,6 +11,7 @@
   <link href='../assets/images/logos-icons/favicon.png' rel='icon' type='images/png'>
   <!-- Style -->
   <link href='../assets/css/site.css' rel='stylesheet'>
+  <link href='../assets/fonts/ss-social/webfonts/ss-social.css' rel='stylesheet'>
   <!--[if lt IE 9 ]>
     <link href='../assets/css/ie.css' rel='stylesheet'>
   <![endif]-->
@@ -21,7 +22,7 @@
   </script>
   <script rel='javascript' src='../assets/js/modernizr.min.js'></script>
 </head>
-<body>
+<body class='ramen'>
   <section id='site-header'>
     <div class='site-header-inner'>
       <div class='brand-wrap'>
@@ -66,17 +67,85 @@
     </div>
   </section>
   <section id='site-content'>
-    <div class='content-background'>
-      <img alt='Tanoshi' src='../assets/images/content/banner-3.jpg'>
-      <header class='content-header'>
-        <div class='content-header-inner'>
-          <h2>
-            Ramen
-          </h2>
+    <div class='site-content-inner'>
+      <section class='what-is-ramen-wrap'>
+        <div class='what-is-ramen'>
+          <h3>What is Ramen?</h3>
+          <div class='item noodles'>
+            <div class='item-info'>
+              <h4>Ramen Noodles</h4>
+              <p>Daughter plays in Austin because pour-over, so many PBRs.</p>
+            </div>
+            <div class='item-img'>
+              <img alt='Ramen Noodles' class='tooltip' src='../assets/images/content/ingredients/noodles.png' title='Ramen Noodles'>
+            </div>
+          </div>
+          <div class='item shiitake'>
+            <div class='item-info'>
+              <h4>Shiitake Mushrooms</h4>
+              <p>Daughter plays in Austin because pour-over, so many PBRs.</p>
+            </div>
+            <div class='item-img'>
+              <img alt='Shiitake Mushrooms' class='tooltip' src='../assets/images/content/ingredients/shiitake.png' title='Shiitake Mushrooms'>
+            </div>
+          </div>
+          <div class='item pork'>
+            <div class='item-info'>
+              <h4>Braised Pork</h4>
+              <p>Daughter plays in Austin because pour-over, so many PBRs.</p>
+            </div>
+            <div class='item-img'>
+              <img alt='Braised Pork' class='tooltip' src='../assets/images/content/ingredients/pork.png' title='Braised Pork'>
+            </div>
+          </div>
+          <div class='item bamboo'>
+            <div class='item-info'>
+              <h4>Bamboo Shoots</h4>
+              <p>Daughter plays in Austin because pour-over, so many PBRs.</p>
+            </div>
+            <div class='item-img'>
+              <img alt='Bamboo Shoots' class='tooltip' src='../assets/images/content/ingredients/bamboo.png' title='Bamboo Shoots'>
+            </div>
+          </div>
+          <div class='item bokchoy'>
+            <div class='item-info'>
+              <h4>Roasted Bok Choy</h4>
+              <p>Daughter plays in Austin because pour-over, so many PBRs.</p>
+            </div>
+            <div class='item-img'>
+              <img alt='Roasted Bok Choy' class='tooltip' src='../assets/images/content/ingredients/bokchoy.png' title='Roasted Bok Choy'>
+            </div>
+          </div>
+          <div class='item corn'>
+            <div class='item-info'>
+              <h4>Sweet Corn</h4>
+              <p>Daughter plays in Austin because pour-over, so many PBRs.</p>
+            </div>
+            <div class='item-img'>
+              <img alt='Sweet Corn' class='tooltip' src='../assets/images/content/ingredients/corn.png' title='Sweet Corn'>
+            </div>
+          </div>
+          <div class='item seeds'>
+            <div class='item-info'>
+              <h4>Sesame Seeds</h4>
+              <p>Daughter plays in Austin because pour-over, so many PBRs.</p>
+            </div>
+            <div class='item-img'>
+              <img alt='Sesame Seeds' class='tooltip' src='../assets/images/content/ingredients/seeds.png' title='Sesame Seeds'>
+            </div>
+          </div>
+          <div class='item scallions'>
+            <div class='item-info'>
+              <h4>Scallions</h4>
+              <p>Daughter plays in Austin because pour-over, so many PBRs.</p>
+            </div>
+            <div class='item-img'>
+              <img alt='Scallions' class='tooltip' src='../assets/images/content/ingredients/scallions.png' title='Scallions'>
+            </div>
+          </div>
         </div>
-      </header>
+      </section>
     </div>
-    <div class='site-content-inner'></div>
   </section>
   <div class='foot-notes'>
     <div class='location'>
@@ -91,6 +160,12 @@
   </div>
   <footer id='site-footer'>
     <div class='site-footer-inner'>
+      <div class='social-list'>
+        <a class='ss-icon' href='https://twitter.com/TanoshiiRamen' target='blank'>&#xF611;</a>
+        <a class='ss-icon' href='https://www.facebook.com/TanoshiRamenBar' target='blank'>&#xF610;</a>
+        <a class='ss-icon' href='http://instagram.com/tanoshiiramenbar/' target='blank'>&#xF641;</a>
+        <a class='ss-icon' href='mailto:info@tanoshiiramen.com' target='blank'>&#x2709;</a>
+      </div>
       <ul class='site-map'>
         <li>
           <a href='ramen'>ramen</a>
@@ -108,9 +183,7 @@
     </div>
   </footer>
   <script rel='javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
-  <script rel='javascript' src='../assets/js/foundation.min.js'></script>
-  <script rel='javascript' src='../assets/js/foundation.section.min.js'></script>
-  <script>
-    $(document).foundation();
-  </script>
+  <script rel='javascript' src='../assets/js/jquery.tooltipster.min.js'></script>
+  <script rel='javascript' src='../assets/js/transit.js'></script>
+  <script rel='javascript' src='../assets/js/transit-ramen.js'></script>
 </body>

@@ -14,8 +14,11 @@
 
     / Style
     %link{:rel => "stylesheet", :href => "../assets/css/site.css"}
+    %link{:rel => "stylesheet", :href => "../assets/fonts/ss-social/webfonts/ss-social.css"}
+
     /[if lt IE 9 ]
         %link{:rel => "stylesheet", :href => "../assets/css/ie.css"}/
+
     / Scripts
     %script{:rel => "javascript", :src => "//use.typekit.net/hbf3urf.js"}
     %script
@@ -152,8 +155,16 @@
                 %br/
                 214.555.1234
 
+
     %footer#site-footer
         .site-footer-inner
+            .social-list
+                %a.ss-icon{:href => "https://twitter.com/TanoshiiRamen", :target => "blank"} &#xF611;
+                %a.ss-icon{:href => "https://www.facebook.com/TanoshiRamenBar", :target => "blank"} &#xF610;
+                %a.ss-icon{:href => "http://instagram.com/tanoshiiramenbar/", :target => "blank"} &#xF641;
+                %a.ss-icon{:href => "mailto:info@tanoshiiramen.com", :target => "blank"} &#x2709;
+
+
             %ul.site-map
                 %li
                     %a{:href => "ramen"} ramen
@@ -167,8 +178,4 @@
 
 
     %script{:rel => "javascript", :src => "https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"}
-    %script{:rel => "javascript", :src => "../assets/js/foundation.min.js"}
-    %script{:rel => "javascript", :src => "../assets/js/foundation.section.min.js"}
-    %script
-        $(document).foundation();
 

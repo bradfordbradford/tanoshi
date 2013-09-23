@@ -14,8 +14,11 @@
 
     / Style
     %link{:rel => "stylesheet", :href => "../assets/css/site.css"}
+    %link{:rel => "stylesheet", :href => "../assets/fonts/ss-social/webfonts/ss-social.css"}
+
     /[if lt IE 9 ]
         %link{:rel => "stylesheet", :href => "../assets/css/ie.css"}/
+
     / Scripts
     %script{:rel => "javascript", :src => "//use.typekit.net/hbf3urf.js"}
     %script
@@ -23,7 +26,7 @@
     %script{:rel => "javascript", :src => "../assets/js/modernizr.min.js"}
 
 
-%body
+%body.ramen
 
 
     %section#site-header
@@ -62,18 +65,76 @@
 
 
     %section#site-content
-
-        .content-background
-            %img{:src => "../assets/images/content/banner-3.jpg", :alt => "Tanoshi"}/
-
-            %header.content-header
-                .content-header-inner
-                    %h2
-                        Ramen
-
-
         .site-content-inner
 
+            %section.what-is-ramen-wrap
+                .what-is-ramen
+
+                    %h3 What is Ramen?
+
+                    .item.noodles
+                        .item-info
+                            %h4 Ramen Noodles
+                            %p Daughter plays in Austin because pour-over, so many PBRs.
+
+                        .item-img
+                            %img.tooltip{:title => "Ramen Noodles", :src => "../assets/images/content/ingredients/noodles.png", :alt => "Ramen Noodles"}/
+
+                    .item.shiitake
+                        .item-info
+                            %h4 Shiitake Mushrooms
+                            %p Daughter plays in Austin because pour-over, so many PBRs.
+
+                        .item-img
+                            %img.tooltip{:title => "Shiitake Mushrooms", :src => "../assets/images/content/ingredients/shiitake.png", :alt => "Shiitake Mushrooms"}/
+
+                    .item.pork
+                        .item-info
+                            %h4 Braised Pork
+                            %p Daughter plays in Austin because pour-over, so many PBRs.
+
+                        .item-img
+                            %img.tooltip{:title => "Braised Pork", :src => "../assets/images/content/ingredients/pork.png", :alt => "Braised Pork"}/
+
+                    .item.bamboo
+                        .item-info
+                            %h4 Bamboo Shoots
+                            %p Daughter plays in Austin because pour-over, so many PBRs.
+
+                        .item-img
+                            %img.tooltip{:title => "Bamboo Shoots", :src => "../assets/images/content/ingredients/bamboo.png", :alt => "Bamboo Shoots"}/
+
+                    .item.bokchoy
+                        .item-info
+                            %h4 Roasted Bok Choy
+                            %p Daughter plays in Austin because pour-over, so many PBRs.
+
+                        .item-img
+                            %img.tooltip{:title => "Roasted Bok Choy", :src => "../assets/images/content/ingredients/bokchoy.png", :alt => "Roasted Bok Choy"}/
+
+                    .item.corn
+                        .item-info
+                            %h4 Sweet Corn
+                            %p Daughter plays in Austin because pour-over, so many PBRs.
+
+                        .item-img
+                            %img.tooltip{:title => "Sweet Corn", :src => "../assets/images/content/ingredients/corn.png", :alt => "Sweet Corn"}/
+
+                    .item.seeds
+                        .item-info
+                            %h4 Sesame Seeds
+                            %p Daughter plays in Austin because pour-over, so many PBRs.
+
+                        .item-img
+                            %img.tooltip{:title => "Sesame Seeds", :src => "../assets/images/content/ingredients/seeds.png", :alt => "Sesame Seeds"}/
+
+                    .item.scallions
+                        .item-info
+                            %h4 Scallions
+                            %p Daughter plays in Austin because pour-over, so many PBRs.
+
+                        .item-img
+                            %img.tooltip{:title => "Scallions", :src => "../assets/images/content/ingredients/scallions.png", :alt => "Scallions"}/
 
 
 
@@ -88,6 +149,12 @@
 
     %footer#site-footer
         .site-footer-inner
+            .social-list
+                %a.ss-icon{:href => "https://twitter.com/TanoshiiRamen", :target => "blank"} &#xF611;
+                %a.ss-icon{:href => "https://www.facebook.com/TanoshiRamenBar", :target => "blank"} &#xF610;
+                %a.ss-icon{:href => "http://instagram.com/tanoshiiramenbar/", :target => "blank"} &#xF641;
+                %a.ss-icon{:href => "mailto:info@tanoshiiramen.com", :target => "blank"} &#x2709;
+
             %ul.site-map
                 %li
                     %a{:href => "ramen"} ramen
@@ -101,8 +168,6 @@
 
 
     %script{:rel => "javascript", :src => "https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"}
-    %script{:rel => "javascript", :src => "../assets/js/foundation.min.js"}
-    %script{:rel => "javascript", :src => "../assets/js/foundation.section.min.js"}
-    %script
-        $(document).foundation();
-
+    %script{:rel => "javascript", :src => "../assets/js/jquery.tooltipster.min.js"}
+    %script{:rel => "javascript", :src => "../assets/js/transit.js"}
+    %script{:rel => "javascript", :src => "../assets/js/transit-ramen.js"}

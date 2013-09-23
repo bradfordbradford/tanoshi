@@ -4,8 +4,7 @@
 
 
 
-// Sticky Footer
-
+// Sticky Footer ----------------------
 * {
   margin: 0;
 }
@@ -14,7 +13,6 @@ html, body {
 }
 #site-content {
   min-height: 100%;
-  /* equal to footer height */
   margin-bottom: -100px;
 }
 #site-content:after {
@@ -22,6 +20,22 @@ html, body {
   display: block;
 }
 #site-footer, #site-content:after {
-  /* .push must be the same height as footer */
   height: 100px;
+}
+
+
+body.home #site-content {
+      min-height: 84%;
+  }
+@include breakpoint(phones) {
+    body.home #site-content {
+        min-height: 10%;
+    }
+}
+
+
+body.ramen {
+  #site-content {
+    margin-bottom:0;
+  }
 }

@@ -13,7 +13,7 @@
     @media (min-width: 1250px) { @content; }
   }
   @else if $point == correct-Wide {
-    @media (max-width: 1080px)  { @content; }
+    @media (min-width: 1000px)  { @content; }
   }
   @else if $point == tablet-H {
     @media (max-width: 979px) { @content; }
@@ -97,6 +97,7 @@ p.emph {
     margin: 12px 0;
 }
 
+
 // Horizontal Rule
 hr {
   width: 32px;
@@ -104,7 +105,8 @@ hr {
     margin: 0 auto;
 }
 
-// Article Specail Cases
+
+// Article Special Cases
 article, aside {
     // Article Lists
 
@@ -157,7 +159,11 @@ background-color: $text-color;
 }
 
 
-// button, .button { border-style: solid; border-width: 1px; cursor: pointer; font-family: inherit; font-weight: bold; line-height: 1; margin: 0 0 1.25em; position: relative; text-decoration: none; text-align: center; display: inline-block; padding-top: 0.75em; padding-right: 1.5em; padding-bottom: 0.8125em; padding-left: 1.5em; font-size: 1em; background-color: #5f5e5f; border-color: #454545; color: white; }
+
+
+html {
+    background: url("../images/content/lightpaperfibers.png") repeat !important;
+}
 
 
 

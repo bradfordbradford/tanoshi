@@ -1,0 +1,116 @@
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@-moz-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@-o-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.animated.fadeIn {
+    -webkit-animation-name: fadeIn;
+    -moz-animation-name: fadeIn;
+    -o-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+
+
+// Basics (a layout for all devices) -----
+.what-is-ramen-wrap {
+
+    margin-top:80px;
+
+    .item {
+        width: 30%;
+        margin: 42px auto 100px;
+    }
+
+    h3 {
+        text-align: center;
+        margin:92px auto 48px;
+        font-weight: 500;
+    }
+
+    .item-img {
+        width:140px;
+        margin: 0 auto;
+        @include transition(all .2s ease-in-out);
+
+        &:hover {
+            cursor: pointer;
+            @include transform(translateY(-10px)translateX(4px));
+        }
+    }
+
+    @include breakpoint(tablet-V) {
+        .item {
+            width: 80%;
+        }
+    }
+}
+
+// Got JS? Let's get this party started! -------
+html.js {
+    .what-is-ramen-wrap {
+        opacity: 0;
+        @include transition(all .2s ease-in-out);
+    }
+
+    body.ready {
+        .what-is-ramen-wrap {
+            opacity: 1;
+        }
+    }
+}
+
+
+
+@include breakpoint(correct-Wide) {
+    // Not IE + Desktops
+
+    .what-is-ramen-wrap {
+        .item {
+            width: auto;
+        }
+
+        .item-info {
+            display: none;
+        }
+
+        .item-img {
+            position: absolute;
+            bottom: -400px;
+            left:-140px;
+        }
+
+        // Placement
+        .shiitake .item-img{
+            bottom: -200px;
+        }
+
+
+    }
+
+}
+
+
+        // .prompt {
+        //     opacity: 0;
+        // }
+
+
+
+

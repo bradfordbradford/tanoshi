@@ -33,7 +33,7 @@ section#site-content {
         }
 
         h3 {
-            margin:92px auto 48px;
+            margin:54px auto 48px;
             font-weight: 500;
         }
 
@@ -91,14 +91,18 @@ section#site-content {
 .content-background {
     overflow: hidden;
     position: relative;
-    margin-top:70px;
-    min-height: 164px;
+    max-height: 500px;
+    min-height: 140px;
     z-index: 0;
 
     img {
-        margin: 40px auto -82px;
+        margin: 0px auto -82px;
         width: 100%;
     }
+}
+
+body.home .content-background {
+    max-height: 700px;
 }
 
 
@@ -125,10 +129,8 @@ header.content-header {
         margin: 16px 0 ;
         padding: 0;
         color: white;
-        // @include span-columns(6 omega,12);
+        float: right;
         text-align: right;
-        position: absolute;
-        right:32px;
         letter-spacing: .14em;
     }
 
@@ -138,11 +140,26 @@ header.content-header {
         margin-left:32px;
     }
 
+    @include breakpoint(phones) {
+        p {
+            @include span-columns(12,12);
+            float: none;
+        }
+    }
+
+}
+
+body.home {
+    header.content-header {
+        position: static;
+
+    }
 }
 
 @include breakpoint(tablet-V) {
     header.content-header {
-        top: 70px;
+        top: 60px;
+        padding: 10px 15px;
 
         h2 {
             @include span-columns(12 omega,12);
@@ -165,34 +182,52 @@ header.content-header {
     }
     section.active {
         padding-top: 0 !important;
+
+        a.title-control {
+            border-bottom: 1px solid white;
+        }
     }
 }
 
 a.title-control {
-
     color: white;
     font-family: $sans;
-    padding: 32px 60px;
-    line-height: 60px;
-    font-size: emCalc(14);
-    letter-spacing: .12em;
+    margin: 24px 0 0 40px;
+    text-align:center;
+    line-height: 40px;
+    font-size: emCalc(18);
+    letter-spacing: .16em;
 
-    &.active, &:hover {
-        span {
+     &:hover a {
             border-bottom: 1px solid white;
-        }
     }
 
-    @include breakpoint(tablet-V) {
+}
+
+// Media
+@include breakpoint(tablet-V) {
+     a.title-control {
         position: relative;
-        left: 30px !important;
         padding: 0;
-        top: 40px;
+        margin: 16px 0 0 32px;
+        top: 100px;
         line-height: 30px;
+        font-size: emCalc(14);
+        color: $text-color;
 
         &.street-food {
-            top: 64px;
+            top: 100px;
+            left: 100px;
         }
     }
 
+    .section-container section.active a.title-control {
+        border-bottom: 1px solid $text-color;
+    }
+}
+
+
+// Backstretch
+.backstretch {
+    margin-top: 120px;
 }
