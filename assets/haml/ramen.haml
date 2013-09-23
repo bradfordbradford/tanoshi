@@ -6,24 +6,33 @@
 %head
     / Meta
     %meta{:charset => "UTF-8"}
+    %meta{:name=>"viewport", :content=>"width=device-width,initial-scale=1"}
+
     %title Tanoshi · Ramen Bar
     %meta{:name=>"description", :content=>"Tanoshi is a Ramen Bar located in Dallas, TX"}
+    %meta{:name=>"keywords", :content=>"Ramen, Tanoshi, Dallas TX, Texas, Commerce St."}
     %meta{:name=>"author", :content=>"Tanoshi"}
-    %meta{:name=>"viewport", :content=>"width=device-width,initial-scale=1"}
-    %link{:rel => "icon", :type => "images/png", :href => "../assets/images/logos-icons/favicon.png"}/
+
+    %meta{:property=>"og:title", :content=>"Tanoshi · Ramen Bar"}
+    %meta{:property=>"og:site_name", :content=>"Tanoshi · Ramen Bar"}
+    %meta{:property=>"og:type", :content=>"website"}
+    %meta{:property=>"og:image", :content=>"http://tanoshiiramen.com/assets/images/logos-icons/og-image_tanoshi.png"}
+
+    %link{:rel => "icon", :type => "images/png", :href => "http://tanoshiiramen.com/assets/images/logos-icons/favicon.png"}/
 
     / Style
-    %link{:rel => "stylesheet", :href => "../assets/css/site.css"}
-    %link{:rel => "stylesheet", :href => "../assets/fonts/ss-social/webfonts/ss-social.css"}
+    %link{:rel => "stylesheet", :href => "http://tanoshiiramen.com/assets/css/site.css"}
+    %link{:rel => "stylesheet", :href => "http://tanoshiiramen.com/assets/fonts/ss-social/webfonts/ss-social.css"}
 
     /[if lt IE 9 ]
-        %link{:rel => "stylesheet", :href => "../assets/css/ie.css"}/
+        %link{:rel => "stylesheet", :href => "http://tanoshiiramen.com/assets/css/ie.css"}/
 
     / Scripts
-    %script{:rel => "javascript", :src => "//use.typekit.net/hbf3urf.js"}
+    %script{:rel => "javascript", :src => "http://tanoshiiramen.com/assets/js/modernizr.min.js"}
+    %script{:rel => "javascript", :src => "//use.typekit.net/aas4sha.js"}
     %script
         try{Typekit.load();}catch(e){}
-    %script{:rel => "javascript", :src => "../assets/js/modernizr.min.js"}
+    %script{:rel => "javascript", :src => "http://tanoshiiramen.com/assets/js/modernizr.min.js"}
 
 
 %body.ramen
@@ -33,7 +42,7 @@
         .site-header-inner
             .brand-wrap
                 %a.brand{:href => "index.html"}
-                    %img{:src => "../assets/images/logos-icons/brand+@2x.png", :alt => "Tanoshi"}/
+                    %img{:src => "http://tanoshiiramen.com/assets/images/logos-icons/brand+@2x.png", :alt => "Tanoshi"}/
 
                     %h1 Tanoshi
 
@@ -78,7 +87,7 @@
                             %p Daughter plays in Austin because pour-over, so many PBRs.
 
                         .item-img
-                            %img.tooltip{:title => "Ramen Noodles", :src => "../assets/images/content/ingredients/noodles.png", :alt => "Ramen Noodles"}/
+                            %img.tooltip{:title => "Ramen Noodles", :src => "http://tanoshiiramen.com/assets/images/content/ingredients/noodles.png", :alt => "Ramen Noodles"}/
 
                     .item.shiitake
                         .item-info
@@ -86,7 +95,7 @@
                             %p Daughter plays in Austin because pour-over, so many PBRs.
 
                         .item-img
-                            %img.tooltip{:title => "Shiitake Mushrooms", :src => "../assets/images/content/ingredients/shiitake.png", :alt => "Shiitake Mushrooms"}/
+                            %img.tooltip{:title => "Shiitake Mushrooms", :src => "http://tanoshiiramen.com/assets/images/content/ingredients/shiitake.png", :alt => "Shiitake Mushrooms"}/
 
                     .item.pork
                         .item-info
@@ -94,7 +103,7 @@
                             %p Daughter plays in Austin because pour-over, so many PBRs.
 
                         .item-img
-                            %img.tooltip{:title => "Braised Pork", :src => "../assets/images/content/ingredients/pork.png", :alt => "Braised Pork"}/
+                            %img.tooltip{:title => "Braised Pork", :src => "http://tanoshiiramen.com/assets/images/content/ingredients/pork.png", :alt => "Braised Pork"}/
 
                     .item.bamboo
                         .item-info
@@ -102,7 +111,7 @@
                             %p Daughter plays in Austin because pour-over, so many PBRs.
 
                         .item-img
-                            %img.tooltip{:title => "Bamboo Shoots", :src => "../assets/images/content/ingredients/bamboo.png", :alt => "Bamboo Shoots"}/
+                            %img.tooltip{:title => "Bamboo Shoots", :src => "http://tanoshiiramen.com/assets/images/content/ingredients/bamboo.png", :alt => "Bamboo Shoots"}/
 
                     .item.bokchoy
                         .item-info
@@ -110,7 +119,7 @@
                             %p Daughter plays in Austin because pour-over, so many PBRs.
 
                         .item-img
-                            %img.tooltip{:title => "Roasted Bok Choy", :src => "../assets/images/content/ingredients/bokchoy.png", :alt => "Roasted Bok Choy"}/
+                            %img.tooltip{:title => "Roasted Bok Choy", :src => "http://tanoshiiramen.com/assets/images/content/ingredients/bokchoy.png", :alt => "Roasted Bok Choy"}/
 
                     .item.corn
                         .item-info
@@ -118,7 +127,7 @@
                             %p Daughter plays in Austin because pour-over, so many PBRs.
 
                         .item-img
-                            %img.tooltip{:title => "Sweet Corn", :src => "../assets/images/content/ingredients/corn.png", :alt => "Sweet Corn"}/
+                            %img.tooltip{:title => "Sweet Corn", :src => "http://tanoshiiramen.com/assets/images/content/ingredients/corn.png", :alt => "Sweet Corn"}/
 
                     .item.seeds
                         .item-info
@@ -126,7 +135,7 @@
                             %p Daughter plays in Austin because pour-over, so many PBRs.
 
                         .item-img
-                            %img.tooltip{:title => "Sesame Seeds", :src => "../assets/images/content/ingredients/seeds.png", :alt => "Sesame Seeds"}/
+                            %img.tooltip{:title => "Sesame Seeds", :src => "http://tanoshiiramen.com/assets/images/content/ingredients/seeds.png", :alt => "Sesame Seeds"}/
 
                     .item.scallions
                         .item-info
@@ -134,7 +143,7 @@
                             %p Daughter plays in Austin because pour-over, so many PBRs.
 
                         .item-img
-                            %img.tooltip{:title => "Scallions", :src => "../assets/images/content/ingredients/scallions.png", :alt => "Scallions"}/
+                            %img.tooltip{:title => "Scallions", :src => "http://tanoshiiramen.com/assets/images/content/ingredients/scallions.png", :alt => "Scallions"}/
 
 
 
@@ -168,6 +177,6 @@
 
 
     %script{:rel => "javascript", :src => "https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"}
-    %script{:rel => "javascript", :src => "../assets/js/jquery.tooltipster.min.js"}
-    %script{:rel => "javascript", :src => "../assets/js/transit.js"}
-    %script{:rel => "javascript", :src => "../assets/js/transit-ramen.js"}
+    %script{:rel => "javascript", :src => "http://tanoshiiramen.com/assets/js/jquery.tooltipster.min.js"}
+    %script{:rel => "javascript", :src => "http://tanoshiiramen.com/assets/js/transit.js"}
+    %script{:rel => "javascript", :src => "http://tanoshiiramen.com/assets/js/transit-ramen.js"}

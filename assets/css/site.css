@@ -359,6 +359,7 @@ section#site-content article.content-menu-wrap .content-menu { padding: 44px 60p
 section#site-content article.content-menu-wrap h3 { margin: 54px auto 48px; font-weight: 500; }
 section#site-content article.content-menu-wrap h4 { font-family: "courier-prime"; }
 section#site-content aside.aside-background, section#site-content aside.aside-content-wrap { width: 40.677966102%; float: right; margin-right: 0; *margin-left: -1em; display: inline; }
+section#site-content aside.aside-background { max-height: 1200px; overflow: hidden; }
 section#site-content aside .aside-content { padding: 44px 60px 0px; position: relative; margin-bottom: 82px; }
 section#site-content aside #map { position: relative; height: 400px; }
 @media (max-width: 768px) { section#site-content article.content-copy-wrap, section#site-content aside.aside-background, section#site-content aside.aside-content-wrap { width: 100%; float: left; margin-right: 1.694915254%; display: inline; }
@@ -389,6 +390,10 @@ body.home header.content-header { position: static; }
 .section-container .title { top: -132px !important; }
 .section-container section.active { padding-top: 0 !important; }
 .section-container section.active a.title-control { border-bottom: 1px solid white; }
+
+aside.aside-background.ramen { background: url("../images/content/banner-4.jpg") no-repeat; width: 100px; height: 1400px; }
+
+aside.aside-background.streetfood { background: url("../images/content/banner-6.jpg") no-repeat; width: 100px; height: 1400px; }
 
 a.title-control { color: white; font-family: "brandon-grotesque"; margin: 24px 0 0 40px; text-align: center; line-height: 40px; font-size: 1.125em; letter-spacing: .16em; }
 a.title-control:hover a { border-bottom: 1px solid white; }
