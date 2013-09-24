@@ -99,6 +99,8 @@ section#site-content {
     max-height: 500px;
     min-height: 140px;
     z-index: 0;
+    @include transition(opacity .15s ease-in);
+    @include transition-delay(.15s);
 
     img {
         margin: 0px auto -82px;
@@ -109,6 +111,19 @@ section#site-content {
 body.home .content-background {
     max-height: 700px;
 }
+
+// Swanky Fade In Content Background
+html.js {
+    .content-background {
+        opacity: 0;
+    }
+     body.ready {
+        .content-background {
+            opacity: 1;
+        }
+    }
+}
+
 
 
 
@@ -192,6 +207,11 @@ body.home {
             border-bottom: 1px solid white;
         }
     }
+}
+
+// No JS
+[data-section='']:not([data-section-resized]):not([data-section-small-style]), [data-section='auto']:not([data-section-resized]):not([data-section-small-style]), .section-container.auto:not([data-section-resized]):not([data-section-small-style]) {
+    visibility: inherit;
 }
 
 aside.aside-background.ramen {

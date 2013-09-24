@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--[if lt IE 9]> <html lang="en" class="no-js lt-ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js ramen"> <!--<![endif]-->
 <head>
   <!-- Meta -->
   <meta charset='UTF-8'>
@@ -16,6 +16,7 @@
   <link href='http://tanoshiiramen.com/assets/images/logos-icons/favicon.png' rel='icon' type='images/png'>
   <!-- Style -->
   <link href='http://tanoshiiramen.com/assets/css/site.css' rel='stylesheet'>
+  <link href='http://tanoshiiramen.com//assets/css/animation.css' rel='stylesheet'>
   <link href='http://tanoshiiramen.com/assets/fonts/ss-social/webfonts/ss-social.css' rel='stylesheet'>
   <!--[if lt IE 9 ]>
     <link href='http://tanoshiiramen.com/assets/css/ie.css' rel='stylesheet'>
@@ -61,7 +62,7 @@
           </li>
         </ul>
         <div class='location'>
-          <p class='sans'>
+          <p class='sans editable' id='editable-address'>
             2427 Commerce Street
             <br>
             Dallas, Texas 75226
@@ -76,77 +77,100 @@
     <div class='site-content-inner'>
       <section class='what-is-ramen-wrap'>
         <div class='what-is-ramen'>
-          <h3>What is Ramen?</h3>
+          <div class='definition'>
+            <h3 class='ramen-title'>What is Ramen?</h3>
+            <a class='small prompt'>
+              Hover to Explore the anatomy of Ramen
+            </a>
+          </div>
           <div class='item noodles'>
             <div class='item-info'>
               <h4>Ramen Noodles</h4>
-              <p>Daughter plays in Austin because pour-over, so many PBRs.</p>
             </div>
-            <div class='item-img'>
-              <img alt='Ramen Noodles' class='tooltip' src='http://tanoshiiramen.com/assets/images/content/ingredients/noodles.png' title='Ramen Noodles'>
+            <div class='item-img-wrap'>
+              <div class='item-img'>
+                <img alt='Ramen Noodles' class='tooltip' src='http://tanoshiiramen.com/assets/images/content/ingredients/noodles.jpg' title='Ramen Noodles'>
+              </div>
             </div>
           </div>
           <div class='item shiitake'>
             <div class='item-info'>
               <h4>Shiitake Mushrooms</h4>
-              <p>Daughter plays in Austin because pour-over, so many PBRs.</p>
             </div>
-            <div class='item-img'>
-              <img alt='Shiitake Mushrooms' class='tooltip' src='http://tanoshiiramen.com/assets/images/content/ingredients/shiitake.png' title='Shiitake Mushrooms'>
+            <div class='item-img-wrap'>
+              <div class='item-img'>
+                <img alt='Shiitake Mushrooms' class='tooltip' src='http://tanoshiiramen.com/assets/images/content/ingredients/shiitake.jpg' title='Shiitake Mushrooms'>
+              </div>
             </div>
           </div>
           <div class='item pork'>
             <div class='item-info'>
               <h4>Braised Pork</h4>
-              <p>Daughter plays in Austin because pour-over, so many PBRs.</p>
             </div>
-            <div class='item-img'>
-              <img alt='Braised Pork' class='tooltip' src='http://tanoshiiramen.com/assets/images/content/ingredients/pork.png' title='Braised Pork'>
+            <div class='item-img-wrap'>
+              <div class='item-img'>
+                <img alt='Braised Pork' class='tooltip' src='http://tanoshiiramen.com/assets/images/content/ingredients/pork.jpg' title='Braised Pork'>
+              </div>
             </div>
           </div>
           <div class='item bamboo'>
             <div class='item-info'>
               <h4>Bamboo Shoots</h4>
-              <p>Daughter plays in Austin because pour-over, so many PBRs.</p>
             </div>
-            <div class='item-img'>
-              <img alt='Bamboo Shoots' class='tooltip' src='http://tanoshiiramen.com/assets/images/content/ingredients/bamboo.png' title='Bamboo Shoots'>
+            <div class='item-img-wrap'>
+              <div class='item-img'>
+                <img alt='Bamboo Shoots' class='tooltip' src='http://tanoshiiramen.com/assets/images/content/ingredients/bamboo.jpg' title='Bamboo Shoots'>
+              </div>
             </div>
           </div>
           <div class='item bokchoy'>
             <div class='item-info'>
               <h4>Roasted Bok Choy</h4>
-              <p>Daughter plays in Austin because pour-over, so many PBRs.</p>
             </div>
-            <div class='item-img'>
-              <img alt='Roasted Bok Choy' class='tooltip' src='http://tanoshiiramen.com/assets/images/content/ingredients/bokchoy.png' title='Roasted Bok Choy'>
+            <div class='item-img-wrap'>
+              <div class='item-img'>
+                <img alt='Roasted Bok Choy' class='tooltip' src='http://tanoshiiramen.com/assets/images/content/ingredients/bokchoy.jpg' title='Roasted Bok Choy'>
+              </div>
             </div>
           </div>
           <div class='item corn'>
             <div class='item-info'>
               <h4>Sweet Corn</h4>
-              <p>Daughter plays in Austin because pour-over, so many PBRs.</p>
             </div>
-            <div class='item-img'>
-              <img alt='Sweet Corn' class='tooltip' src='http://tanoshiiramen.com/assets/images/content/ingredients/corn.png' title='Sweet Corn'>
+            <div class='item-img-wrap'>
+              <div class='item-img'>
+                <img alt='Sweet Corn' class='tooltip' src='http://tanoshiiramen.com/assets/images/content/ingredients/corn.jpg' title='Sweet Corn'>
+              </div>
             </div>
           </div>
           <div class='item seeds'>
             <div class='item-info'>
               <h4>Sesame Seeds</h4>
-              <p>Daughter plays in Austin because pour-over, so many PBRs.</p>
             </div>
-            <div class='item-img'>
-              <img alt='Sesame Seeds' class='tooltip' src='http://tanoshiiramen.com/assets/images/content/ingredients/seeds.png' title='Sesame Seeds'>
+            <div class='item-img-wrap'>
+              <div class='item-img'>
+                <img alt='Sesame Seeds' class='tooltip' src='http://tanoshiiramen.com/assets/images/content/ingredients/sesame.jpg' title='Sesame Seeds'>
+              </div>
             </div>
           </div>
           <div class='item scallions'>
             <div class='item-info'>
               <h4>Scallions</h4>
-              <p>Daughter plays in Austin because pour-over, so many PBRs.</p>
             </div>
-            <div class='item-img'>
-              <img alt='Scallions' class='tooltip' src='http://tanoshiiramen.com/assets/images/content/ingredients/scallions.png' title='Scallions'>
+            <div class='item-img-wrap'>
+              <div class='item-img'>
+                <img alt='Scallions' class='tooltip' src='http://tanoshiiramen.com/assets/images/content/ingredients/scallions.jpg' title='Scallions'>
+              </div>
+            </div>
+          </div>
+          <div class='item egg'>
+            <div class='item-info'>
+              <h4>Egg</h4>
+            </div>
+            <div class='item-img-wrap'>
+              <div class='item-img'>
+                <img alt='Scallions' class='tooltip' src='http://tanoshiiramen.com/assets/images/content/ingredients/egg.jpg' title='Egg'>
+              </div>
             </div>
           </div>
         </div>
@@ -170,7 +194,7 @@
         <a class='ss-icon' href='https://twitter.com/TanoshiiRamen' target='blank'>&#xF611;</a>
         <a class='ss-icon' href='https://www.facebook.com/TanoshiRamenBar' target='blank'>&#xF610;</a>
         <a class='ss-icon' href='http://instagram.com/tanoshiiramenbar/' target='blank'>&#xF641;</a>
-        <a class='ss-icon' href='mailto:info@tanoshiiramen.com' target='blank'>&#x2709;</a>
+        <a class='ss-icon' href='mailto:info@tanoshiiraexplmen.com' target='blank'>&#x2709;</a>
       </div>
       <ul class='site-map'>
         <li>
@@ -190,6 +214,5 @@
   </footer>
   <script rel='javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
   <script rel='javascript' src='http://tanoshiiramen.com/assets/js/jquery.tooltipster.min.js'></script>
-  <script rel='javascript' src='http://tanoshiiramen.com/assets/js/transit.js'></script>
-  <script rel='javascript' src='http://tanoshiiramen.com/assets/js/transit-ramen.js'></script>
+  <script rel='javascript' src='http://tanoshiiramen.com//assets/js/transit-ramen-ck.js'></script>
 </body>

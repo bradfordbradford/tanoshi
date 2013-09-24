@@ -1,5 +1,5 @@
 
-/* TAKIN' FLIGHT. (designed by @foundryco, developed by @wearetelegraph) */
+/* (created by @foundryco, developed by @wearetelegraph) */
 
 
 
@@ -16,6 +16,7 @@
 // Reset, TAKEOFF
 @import
 "globals",
+"grid",
 "basics",
 "reset"
 ;
@@ -26,7 +27,7 @@
 "tanoshi/site-header",
 "tanoshi/site-content",
 "tanoshi/site-tooltipster",
-"tanoshi/site-animation",
+// "tanoshi/site-animation",
 "tanoshi/site-footer",
 "sticky-footer"
 ;

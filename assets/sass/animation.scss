@@ -1,0 +1,195 @@
+@import
+"bourbon",
+"globals",
+"grid";
+
+// Basics (a layout for all those shitty browsers that don't understand breakpoints + small screens) ----------
+.what-is-ramen-wrap {
+    position: relative;
+    margin-top:80px;
+
+    .item {
+        width: 30%;
+        margin: 42px auto 100px;
+    }
+
+    h3.ramen-title {
+        text-align: center;
+        margin:92px auto 48px;
+        font-weight: 500;
+        @include transition(opacity .15s ease-in);
+        @include transition-delay(.15s);
+    }
+
+    h4 {
+        text-align: center;
+    }
+
+    .definition {
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .item-img-wrap {
+        @include transition(all .15s ease-in-out);
+        &:hover {
+            cursor: pointer;
+            @include transform(translate(-2px, -6px));
+        }
+    }
+
+    .item-img {
+        width:140px;
+        margin: 0 auto;
+        @include transition(all .8s ease-in-out);
+        @include transition-delay(.65s);
+    }
+
+    @include breakpoint(tablet-V) {
+        .item {
+            width: 80%;
+        }
+    }
+}
+
+// Got any sort of browser that allows JS? Let's get this party started! -------
+html.js {
+    .what-is-ramen-wrap, h3.ramen-title, .item-img{
+        opacity: 0;
+    }
+
+    .prompt {
+        opacity: 0;
+        border: 1px solid $text-color;
+        padding: 20px 40px 36px;
+        background: rgba(255, 255, 255, 0.7);
+        position: absolute;
+        z-index: 1;
+        left: 50%;
+        bottom: 40px;
+        margin-left: -232px;
+        top: 400px;
+        display: block;
+        font-weight: 400;
+
+        &:hover {
+            background: $highlight;
+            border-color: $highlight;
+            color: white;
+        }
+
+    }
+
+
+    // Ready! ----------
+    body.ready {
+        .what-is-ramen-wrap, h3.ramen-title {
+            opacity: 1;
+        }
+
+
+    }
+}
+
+
+// Delayed - All Browsers ----------
+body.ready.delayed-now-ready {
+    .what-is-ramen-wrap {
+        .item-img {
+            opacity: 1;
+        }
+    }
+}
+
+
+// Desktop Animation (breakpoint auto excludes IE) ----------
+@include breakpoint(correct-Wide) {
+    .item-img {
+        left:-100px;
+        position: absolute;
+    }
+
+    .scallions .item-img{
+        z-index: 4;
+    }
+
+    // Ready ----------
+    body.ready {
+        .what-is-ramen-wrap {
+            .item {
+                width: auto;
+                margin: 0;
+            }
+
+            .item-info {
+                display: none;
+            }
+
+        }
+
+    }
+
+    // Delayed ----------
+    body.ready.delayed-now-ready {
+
+        .what-is-ramen-wrap {
+            .item-img {
+                opacity: 1;
+            }
+
+            .noodles .item-img{
+                @include transform(translate(340px, 270px));
+
+            }
+
+            .shiitake .item-img{
+                @include transform(translate(490px, 220px));
+                @include transition-delay(.58s);
+            }
+
+            .pork .item-img{
+                @include transform(translate(500px, 80px) rotate(20deg));
+            }
+            .bokchoy .item-img{
+                @include transform(translate(640px, 20px) rotate(20deg));
+            }
+            .bamboo .item-img{
+                @include transform(translate(690px, 160px));
+            }
+            .corn .item-img{
+                @include transform(translate(790px, 0px));
+                @include transition-delay(.45s);
+            }
+            .seeds .item-img{
+                @include transform(translate(840px, 160px));
+            }
+            .scallions .item-img{
+                @include transform(translate(1090px, -10px) rotate(20deg));
+            }
+            .egg .item-img{
+                @include transform(translate(960px, 40px));
+                @include transition-delay(.55s);
+            }
+
+
+        }
+    }
+
+}
+
+
+
+// Specific Media For Little Guys
+@include breakpoint(tablet-V) {
+    html.js .prompt {
+        bottom: auto;
+        padding-bottom: 20px;
+    }
+}
+
+@include breakpoint(phones) {
+    html.js .prompt {
+        display: none;
+    }
+}

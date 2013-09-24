@@ -62,7 +62,7 @@
         </li>
       </ul>
       <div class='location'>
-        <p class='sans'>
+        <p class='sans editable' id='editable-address'>
           2427 Commerce Street
           <br>
           Dallas, Texas 75226
@@ -75,8 +75,8 @@
   <section id='site-content'></section>
   <header class='content-header'>
     <div class='content-header-inner'>
-      <h2 class='editable'>ramen</h2>
-      <p class='editable'>Dolore McSweeney's aesthetic, American Apparel dolor gentrify ea raw denim. Anim Austin pour-over church-key PBR McSweeney's. Post-ironic 3 wolf moon tousled, sriracha exercitation quis Marfa meggings Pitchfork master</p>
+      <h2 class='editable' id='editable1'>ramen</h2>
+      <p class='editable' id='editable2'>Dolore McSweeney's aesthetic, American Apparel dolor gentrify ea raw denim. Anim Austin pour-over church-key PBR McSweeney's. Post-ironic 3 wolf moon tousled, sriracha exercitation quis Marfa meggings Pitchfork master</p>
     </div>
   </header>
   <div class='foot-notes'>
@@ -117,6 +117,14 @@
   <script rel='javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
   <script rel='javascript' src='http://tanoshiiramen.com/assets/js/backstretch.js'></script>
   <script>
-    $.backstretch("http://tanoshiiramen.com/assets/images/content/banner-3.jpg");
+    <!-- / Preload the images -->
+    var images = [
+    "http://tanoshiiramen.com/assets/images/content/ramen_img.jpg"
+    ];
+    $(images).each(function(){
+    $("<img />")[0].src = this;
+    });
+    $.backstretch( images[0] );
+    <!-- $.backstretch("http://tanoshiiramen.com/assets/images/content/banner-3.jpg"); -->
   </script>
 </body>

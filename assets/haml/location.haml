@@ -67,7 +67,7 @@
                         %span location
 
             .location
-                %p.sans
+                %p#editable-address.sans.editable
                     2427 Commerce Street
                     %br/
                     Dallas, Texas 75226
@@ -80,7 +80,7 @@
     %section#site-content
 
         .content-background
-            %img{:src => "http://tanoshiiramen.com/assets/images/content/banner-3.jpg", :alt => "Tanoshii"}/
+            %img{:src => "http://tanoshiiramen.com/assets/images/content/location_img.jpg", :alt => "Tanoshii"}/
 
             %header.content-header
                 .content-header-inner
@@ -89,89 +89,93 @@
         .site-content-inner
             %article.content-copy-wrap
                 .content-copy
-                    %h3 Parking
+                    %h3#editable1.editable Parking
 
-                    %p
-                        Street parking on Elm, Main, and Commerce is metered, but free before 6pm during the week.
+                    #editable2.editable
+                        %p
+                            Street parking on Elm, Main, and Commerce is metered, but free before 6pm during the week.
 
-                    %h3 Directions
 
-                    %p
-                        Directions from North Dallas/Plano/Frisco:
 
-                    %ul
-                        %li Head South on Central Expressway/US-75 S
-                        %li Take exit 284C on the left towards Downtown/Good-Latimer
-                        %li Turn left onto N. Good Latimer Expressway
-                        %li Turn left onto Commerce St
-                        %li Destination will be on the right
+                    %h3#editable3.editable Directions
 
-                    %br/
+                    #editable4.editable
+                        %p
+                            Directions from North Dallas/Plano/Frisco:
 
-                    %p
-                        Directions from Arlington/Ft. Worth:
+                        %ul
+                            %li Head South on Central Expressway/US-75 S
+                            %li Take exit 284C on the left towards Downtown/Good-Latimer
+                            %li Turn left onto N. Good Latimer Expressway
+                            %li Turn left onto Commerce St
+                            %li Destination will be on the right
 
-                    %ul
-                        %li Head East on I30 towards Dallas
-                        %li Take exit 45A on the left towards Commerce  St/Downtown
-                        %li Continue onto Commerce St
-                        %li Destination will be on the right
+                        %br/
 
-                    %br/
+                        %p
+                            Directions from Arlington/Ft. Worth:
 
-                    %p
-                        Directions from Rockwall/Mesquite:
+                        %ul
+                            %li Head East on I30 towards Dallas
+                            %li Take exit 45A on the left towards Commerce  St/Downtown
+                            %li Continue onto Commerce St
+                            %li Destination will be on the right
 
-                    %ul
-                        %li Head West on I30 towards Dallas
-                        %li Take exit 47C to merge onto 1st Ave
-                        %li Continue onto Exposition Ave
-                        %li Turn left on to Canton St
-                        %li Turn right onto Henry St
-                        %li Turn right onto Commerce St
-                        %li Destination will be on the right
+                        %br/
 
-                    %br/
+                        %p
+                            Directions from Rockwall/Mesquite:
 
-                    %p
-                        Directions from South Dallas:
+                        %ul
+                            %li Head West on I30 towards Dallas
+                            %li Take exit 47C to merge onto 1st Ave
+                            %li Continue onto Exposition Ave
+                            %li Turn left on to Canton St
+                            %li Turn right onto Henry St
+                            %li Turn right onto Commerce St
+                            %li Destination will be on the right
 
-                    %ul
-                        %li Head North on I-45 and continue onto US-75 N
-                        %li Take exit 284B for Main St W
-                        %li Merge onto Main St
-                        %li Turn left onto S Pearl Expy
-                        %li Take the 1st left onto Commerce St
-                        %li Destination will be on the right
+                        %br/
+
+                        %p
+                            Directions from South Dallas:
+
+                        %ul
+                            %li Head North on I-45 and continue onto US-75 N
+                            %li Take exit 284B for Main St W
+                            %li Merge onto Main St
+                            %li Turn left onto S Pearl Expy
+                            %li Take the 1st left onto Commerce St
+                            %li Destination will be on the right
 
             %aside.aside-content-wrap
                 .aside-content
 
                     #map
 
-                    %h4
+                    %h4#editable5.editable
                         2427 Commerce St
                         %br/
                         Dallas, Texas 75226
                         %br/
                         214.651.6800
-                        -# %br/
-                        -# info@tanoshiiramen.com
 
 
-                    %h4 Hours
-                    %p.emph
-                        Tuesday / 11am-10pm
-                    %p.emph
-                        Thursday / 11am-10pm
-                    %p.emph
-                        Friday / 11am-4am
-                    %p.emph
-                        Saturday / 11am-4am
-                    %p.emph
-                        Sunday / 11am-10pm
-                    %p.emph
-                        Closed Monday
+
+                    %h4#editable6.editable Hours
+                    #editable7.editable
+                        %p.emph
+                            Tuesday / 11am-10pm
+                        %p.emph
+                            Thursday / 11am-10pm
+                        %p.emph
+                            Friday / 11am-4am
+                        %p.emph
+                            Saturday / 11am-4am
+                        %p.emph
+                            Sunday / 11am-10pm
+                        %p.emph
+                            Closed Monday
 
 
     .foot-notes
@@ -207,4 +211,9 @@
     %script{:rel => "javascript", :src => "https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"}
     %script{:rel => "javascript", :src => "http://api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.js"}
     %script{:rel => "javascript", :src => "http://tanoshiiramen.com/assets/js/site.js"}
+    %script
+        $(document).ready(function() {
+        $('body').addClass('ready');
+        window.setTimeout(function(){$("body").addClass("delayed-now-ready");}, 1000);
+        });
 

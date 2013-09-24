@@ -4,42 +4,6 @@
 
 
 
-
-
-// For A World of Devices
-// ------------------------
-@mixin breakpoint($point) {
-  @if $point == large-monitors {
-    @media (min-width: 1250px) { @content; }
-  }
-  @else if $point == correct-Wide {
-    @media (min-width: 1000px)  { @content; }
-  }
-  @else if $point == tablet-H {
-    @media (max-width: 979px) { @content; }
-  }
-  @else if $point == tablet-V {
-    @media (max-width: 768px)  { @content; }
-  }
-
-  @else if $point == phones {
-    @media (max-width: 480px)  { @content; }
-  }
-}
-
-
-
-
-// Grid ------------------------------------
-$total-columns  : 12;             // a 12-column grid
-$column-width   : 4em;            // each column is 4em wide
-$gutter-width   : 1em;            // 1em gutters between columns
-$grid-padding   : $gutter-width;  // grid-padding equal to gutters
-
-
-
-
-
 // Type ------------------------------------
 a {
     text-decoration: none;
@@ -169,5 +133,6 @@ html {
     background: url("../images/content/lightpaperfibers.png") repeat !important;
 }
 
-
-
+html.ramen {
+    background: none !important;
+}

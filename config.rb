@@ -11,8 +11,8 @@ javascripts_dir    = "/assets/js"
 
 # You can select your preferred output style here (can be overridden via the command line):
 #output_style = :expanded or :nested or :compact or :compressed
-  if environment != :production
-    output_style = :compact
+  if environment != :compressed
+    output_style = :compressed
     line_comments = false
     disable_warnings = false
     # give us all the info

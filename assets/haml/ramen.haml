@@ -1,7 +1,7 @@
 !!! 5
 -# paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
 /[if lt IE 9] <html lang="en" class="no-js lt-ie9">
-<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js ramen"> <!--<![endif]-->
 
 %head
     / Meta
@@ -22,6 +22,7 @@
 
     / Style
     %link{:rel => "stylesheet", :href => "http://tanoshiiramen.com/assets/css/site.css"}
+    %link{:rel => "stylesheet", :href => "http://tanoshiiramen.com//assets/css/animation.css"}
     %link{:rel => "stylesheet", :href => "http://tanoshiiramen.com/assets/fonts/ss-social/webfonts/ss-social.css"}
 
     /[if lt IE 9 ]
@@ -63,7 +64,7 @@
                             %span location
 
                 .location
-                    %p.sans
+                    %p#editable-address.sans.editable
                         2427 Commerce Street
                         %br/
                         Dallas, Texas 75226
@@ -79,71 +80,77 @@
             %section.what-is-ramen-wrap
                 .what-is-ramen
 
-                    %h3 What is Ramen?
+                    .definition
+                        %h3.ramen-title What is Ramen?
+
+
+                        %a.small.prompt
+                            Hover to Explore the anatomy of Ramen
+
 
                     .item.noodles
                         .item-info
                             %h4 Ramen Noodles
-                            %p Daughter plays in Austin because pour-over, so many PBRs.
-
-                        .item-img
-                            %img.tooltip{:title => "Ramen Noodles", :src => "http://tanoshiiramen.com/assets/images/content/ingredients/noodles.png", :alt => "Ramen Noodles"}/
+                        .item-img-wrap
+                            .item-img
+                                %img.tooltip{:title => "Ramen Noodles", :src => "http://tanoshiiramen.com/assets/images/content/ingredients/noodles.jpg", :alt => "Ramen Noodles"}/
 
                     .item.shiitake
                         .item-info
                             %h4 Shiitake Mushrooms
-                            %p Daughter plays in Austin because pour-over, so many PBRs.
-
-                        .item-img
-                            %img.tooltip{:title => "Shiitake Mushrooms", :src => "http://tanoshiiramen.com/assets/images/content/ingredients/shiitake.png", :alt => "Shiitake Mushrooms"}/
+                        .item-img-wrap
+                            .item-img
+                                %img.tooltip{:title => "Shiitake Mushrooms", :src => "http://tanoshiiramen.com/assets/images/content/ingredients/shiitake.jpg", :alt => "Shiitake Mushrooms"}/
 
                     .item.pork
                         .item-info
                             %h4 Braised Pork
-                            %p Daughter plays in Austin because pour-over, so many PBRs.
-
-                        .item-img
-                            %img.tooltip{:title => "Braised Pork", :src => "http://tanoshiiramen.com/assets/images/content/ingredients/pork.png", :alt => "Braised Pork"}/
+                        .item-img-wrap
+                            .item-img
+                                %img.tooltip{:title => "Braised Pork", :src => "http://tanoshiiramen.com/assets/images/content/ingredients/pork.jpg", :alt => "Braised Pork"}/
 
                     .item.bamboo
                         .item-info
                             %h4 Bamboo Shoots
-                            %p Daughter plays in Austin because pour-over, so many PBRs.
-
-                        .item-img
-                            %img.tooltip{:title => "Bamboo Shoots", :src => "http://tanoshiiramen.com/assets/images/content/ingredients/bamboo.png", :alt => "Bamboo Shoots"}/
+                        .item-img-wrap
+                            .item-img
+                                %img.tooltip{:title => "Bamboo Shoots", :src => "http://tanoshiiramen.com/assets/images/content/ingredients/bamboo.jpg", :alt => "Bamboo Shoots"}/
 
                     .item.bokchoy
                         .item-info
                             %h4 Roasted Bok Choy
-                            %p Daughter plays in Austin because pour-over, so many PBRs.
-
-                        .item-img
-                            %img.tooltip{:title => "Roasted Bok Choy", :src => "http://tanoshiiramen.com/assets/images/content/ingredients/bokchoy.png", :alt => "Roasted Bok Choy"}/
+                        .item-img-wrap
+                            .item-img
+                                %img.tooltip{:title => "Roasted Bok Choy", :src => "http://tanoshiiramen.com/assets/images/content/ingredients/bokchoy.jpg", :alt => "Roasted Bok Choy"}/
 
                     .item.corn
                         .item-info
                             %h4 Sweet Corn
-                            %p Daughter plays in Austin because pour-over, so many PBRs.
-
-                        .item-img
-                            %img.tooltip{:title => "Sweet Corn", :src => "http://tanoshiiramen.com/assets/images/content/ingredients/corn.png", :alt => "Sweet Corn"}/
+                        .item-img-wrap
+                            .item-img
+                                %img.tooltip{:title => "Sweet Corn", :src => "http://tanoshiiramen.com/assets/images/content/ingredients/corn.jpg", :alt => "Sweet Corn"}/
 
                     .item.seeds
                         .item-info
                             %h4 Sesame Seeds
-                            %p Daughter plays in Austin because pour-over, so many PBRs.
-
-                        .item-img
-                            %img.tooltip{:title => "Sesame Seeds", :src => "http://tanoshiiramen.com/assets/images/content/ingredients/seeds.png", :alt => "Sesame Seeds"}/
+                        .item-img-wrap
+                            .item-img
+                                %img.tooltip{:title => "Roasted Sesame Seeds", :src => "http://tanoshiiramen.com/assets/images/content/ingredients/sesame.jpg", :alt => "Sesame Seeds"}/
 
                     .item.scallions
                         .item-info
                             %h4 Scallions
-                            %p Daughter plays in Austin because pour-over, so many PBRs.
+                        .item-img-wrap
+                            .item-img
+                                %img.tooltip{:title => "Scallions", :src => "http://tanoshiiramen.com/assets/images/content/ingredients/scallions.jpg", :alt => "Scallions"}/
 
-                        .item-img
-                            %img.tooltip{:title => "Scallions", :src => "http://tanoshiiramen.com/assets/images/content/ingredients/scallions.png", :alt => "Scallions"}/
+
+                    .item.egg
+                        .item-info
+                            %h4 Egg
+                        .item-img-wrap
+                            .item-img
+                                %img.tooltip{:title => "Nitamago (Soft Boiled Egg)", :src => "http://tanoshiiramen.com/assets/images/content/ingredients/egg.jpg", :alt => "Scallions"}/
 
 
 
@@ -162,7 +169,7 @@
                 %a.ss-icon{:href => "https://twitter.com/TanoshiiRamen", :target => "blank"} &#xF611;
                 %a.ss-icon{:href => "https://www.facebook.com/TanoshiRamenBar", :target => "blank"} &#xF610;
                 %a.ss-icon{:href => "http://instagram.com/tanoshiiramenbar/", :target => "blank"} &#xF641;
-                %a.ss-icon{:href => "mailto:info@tanoshiiramen.com", :target => "blank"} &#x2709;
+                %a.ss-icon{:href => "mailto:info@tanoshiiraexplmen.com", :target => "blank"} &#x2709;
 
             %ul.site-map
                 %li
@@ -178,5 +185,4 @@
 
     %script{:rel => "javascript", :src => "https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"}
     %script{:rel => "javascript", :src => "http://tanoshiiramen.com/assets/js/jquery.tooltipster.min.js"}
-    %script{:rel => "javascript", :src => "http://tanoshiiramen.com/assets/js/transit.js"}
-    %script{:rel => "javascript", :src => "http://tanoshiiramen.com/assets/js/transit-ramen.js"}
+    %script{:rel => "javascript", :src => "http://tanoshiiramen.com//assets/js/transit-ramen-ck.js"}

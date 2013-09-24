@@ -63,7 +63,7 @@
                             %span location
 
                 .location
-                    %p.sans
+                    %p#editable-address.sans.editable
                         2427 Commerce Street
                         %br/
                         Dallas, Texas 75226
@@ -76,7 +76,7 @@
     %section#site-content
 
         .content-background
-            %img{:src => "http://tanoshiiramen.com/assets/images/content/banner-3.jpg", :alt => "Tanoshii"}/
+            %img{:src => "http://tanoshiiramen.com/assets/images/content/menu_img.jpg", :alt => "Tanoshii"}/
 
             %header.content-header
                 .content-header-inner
@@ -87,70 +87,279 @@
         .site-content-inner
             %article.content-menu-wrap
                 .content-menu
-                    %h3 Street Ramen
+                    %h3#editable-h3-1.sans.editable Street Ramen
 
-                    %h4 Tonkotsu
-                    %hr/
+                    #editable-wrap-1.editable
+                        %h4 Tonkotsu
+                        %hr/
 
-                    %p.small
-                        Dolore McSweeney's aesthetic, American Apparel dolor gentrify ea raw denim. Anim Austin pour-over church-key PBR McSweeney's.
+                        %p
+                            White, silky pork soup topped with pork belly, kikurage mushrooms, bokchoy, menma, nitamago, roasted sesame, and scallions
+                        %p
+                            $10
 
-                    %h4 Miso
-                    %hr/
+                        %h4 Spicy Miso
+                        %hr/
 
-                    %p
-                        Dolore McSweeney's aesthetic, American Apparel dolor gentrify ea raw denim. Anim Austin pour-over church-key PBR McSweeney's.
+                        %p
+                            Tonkotsu soup and miso topped with pork belly, miso grilled corn, roasted sesame, bean sprouts, and scallions
+                        %p
+                            $12
+                        %p.small
+                            Topping suggestions: Onsen tamago / Menma
 
-                    %h4 Shoyu
-                    %hr/
+                        %h4 Shoyu
+                        %hr/
 
-                    %p
-                        Dolore McSweeney's aesthetic, American Apparel dolor gentrify ea raw denim. Anim Austin pour-over church-key PBR McSweeney's.
+                        %p
+                            Soy vegetable soup topped with fish cake, menma, scallions, nori, and bean sprouts, seasonal vegetables and lime
+                        %p
+                            $10
+                        %p.small
+                            Topping suggestions: Nitamago/ Wasabi infused oil
 
-                    %h4 Kim Chi
-                    %hr/
+                        %h4 Curry
+                        %hr/
 
-                    %p
-                        Dolore McSweeney's aesthetic, American Apparel dolor gentrify ea raw denim. Anim Austin pour-over church-key PBR McSweeney's.
+                        %p
+                            Spicy coconut curry soup topped with tempura prawns, mussels, menma, cherry tomato
+                        %p
+                            $14
 
-                    %h4 Curry
-                    %hr/
+                        %p.small
+                            Topping suggestions: Miso grilled corn
+                            %br/
+                            Vegan topping: Panko tofu
 
-                    %p
-                        Dolore McSweeney's aesthetic, American Apparel dolor gentrify ea raw denim. Anim Austin pour-over church-key PBR McSweeney's.
+                        %h4 LemonGrass Chicken & Dumplings
+                        %hr/
 
-                    %h4 Wonton
-                    %hr/
+                        %p
+                            Lemongrass Chicken soup topped with shrimp and pork wontons, shiitake mushrooms, roasted chicken and crispy shallots
+                        %p
+                            $12
 
-                    %p
-                        Dolore McSweeney's aesthetic, American Apparel dolor gentrify ea raw denim. Anim Austin pour-over church-key PBR McSweeney's.
+                        %h4 *KAEDAMA (extra noodle)
+                        %p.small
+                            Our house noodles are cooked al dente.
 
 
 
+                    %h3#editable-h3-1b.sans.editable Soupless Ramen
 
-                    %h3 Soupless Ramen
+                    #editable-wrap-2.editable
+                        %h4
+                            Tsuke-Men
+                            %br/
+                            ("Dipping Noodles")
+                        %hr/
 
-                    %h4
-                        Hayashi-Chuka
+                        %p
+                            Noodles topped with pork belly, menma, nori, nitamago and scallions.  Served with warm broth and rice crackers
+                        %p
+                            $10
+                        %p.small
+                            Vegan topping: Grilled portabella
+
+                        %h4 Yaki-Ramen
+                        %p
+                            Stir fried noodles with seasonal vegetables, chicken, our special yaki sauce
+                        %p
+                            $10
+                            VEGAN OPTION
+
+
+
+                    %h3#editable-h3-2.sans.editable Extra Toppings
+                    #editable-wrap-3.editable
+                        %p NITAMAGO — SOFT BOILED EGG $2
+
+                        %p ONSEN TAMAGO — SLOW COOKED EGG $2
+
+                        %p KIKURAGE MUSHROOMS — CLOUD EAR MUSHROOM $1
+
+                        %p MENMA — BAMBOO SHOOTS $1
+
+                        %p NORI - SEAWEED $1
+
+                        %p MISO GRILLED CORN $2
+
+                        %P KIM CHI $2
+
+                        %P BRAISED PORK BELLY $3
+
+                        %P BULGOGI BEEF $3
+
+                        %P SWIRLED FISH CAKES $1
+
+                        %P WASABI INFUSED OIL $1
+
+
+
+                    %h3#editable-h3-3.sans.editable Izakaya Style Small Plates
+                    #editable-wrap-4.editable
+                        %h4 Edamame
+                        %p
+                            steamed soybeans with sea salt. (VEGAN)
+                        %p
+                            $5
+
+                        %h4 Shishito peppers
+                        %p
+                            blistered and served with spiced salt. (VEGAN)
+                        %p
+                            $6
+
+                        %h4 Hamachi
+                        %p
+                            Yellowtail topped with serrano peppers and ponzu
+                        %p
+                            $12
+
+                        %h4 Roasted Bone Marrow
+                        %p
+                            served with toast and yuzu jelly
+                        %p
+                            $10
+
+                        %h4 Kao anchun da
+                        %p
+                            Skewered quail eggs seasoned w/sesame paste and chili oil
+                        %p
+                            $8
+
+                        %h4
+                            Banh Xeo
+                            %br/
+                            ("Sizziling Crepes")
+                        %p
+                            PORK & SHRIMP - served with jicama, scallions, bean sprouts
+
+                        %p
+                            SCALLION INFUSED MUNG BEANS - served w/ shiitake, jicama, scallions, bean
+                            sprouts. (VEGAN)
+
+                        %p
+                            $8
+
+                        %h4 Panko Tofu
+                        %p
+                            Served w/ Sweet Kimchi sauce
+                        %p
+                            $8
+
+
+
+                    %h3#editable-h3-4.sans.editable
+                        Steamed Buns
+                    #editable-wrap-5.editable
+                        %h4 Braised Pork Belly
+                        %p
+                            spicy mayonnaise, iceberg lettuce ,cucumber, cilantro
+                        %p
+                            $9
+
+                        %h4 Spicy Chicken
+                        %p
+                            spicy mayonnaise, iceberg lettuce, cucumber, cilantro
+                        %p
+                            $9
+
+                        %h4 Braised Shiitake mushroom
+                        %p
+                            hoisin sauce, scallion, cucumber (VEGAN)
+                        %p
+                            $9
+
+                        %h4 Gua Bao
+                        %p
+                            "Taiwanese Burger" Braised pork belly, cilantro, pickled mustard greens, pickled daikon/carrots and crushed peanuts
+                        %p
+                            $11
+
+
+
+                    %h3#editable-h3-5.sans.editable Dumplings
+                    #editable-wrap-6.editable
+                        %h4 Hakata Gyoza
+                        %p
+                            panfried Pork and Shrimp filled dumplings
+                        %p
+                            $7
+
+                        %h4 Mandu
+                        %p
+                            Kimchi and Tofu dumplings
+                        %p
+                            $7
+
+
+
+                    %h3#editable-h3-6.sans.editable Desserts
+                    #editable-wrap-7.editable
+                        %h4 Lemongrass Pana Cotta
+                        %p
+                            with strawberries and lemon zest
+                        %p
+                            $7
+                        %h4 Fried Banana and Coconut Flakes
+                        %p
+                            w/ vanilla mousse, candied orange and caramelized sugar
+                        %p
+                            $7
+                        %h4 Chocolate Ramen
+                        %p
+                            strawberry ice cream and orange blossom honey
+                        %p
+                            $8
+
+
+
+                    %h3#editable-h3-7.sans.editable Drinks
+                    #editable-wrap-8.editable
+                        %h4
+                            Soybean Milk with Pandan
+                        %p
+                            HOT OR ICED
+                        %h4 Teas,Sodas
+                        %h4 Hot Tea
+                        %p
+                            GREEN TEA
+                        %h4 Coffee
+                        %h4 Voss Sparkling Water
                         %br/
-                        ("Grilled Chinese")
-                    %hr/
-
-                    %p
-                        Dolore McSweeney's aesthetic, American Apparel dolor gentrify ea raw denim. Anim Austin pour-over church-key PBR McSweeney's.
+                        %br/
+                        %br/
+                        %br/
 
 
-                    %h3 Extra Toppings
 
-                    %p NITAMAGO — SOFT BOILED EGG 1.0
+                    %h2#editable-h2-1.editable Late Nite Menu
+                    #editable-wrap-9.editable
+                        %h4 STEAMED BUNS
+                        %p
+                            BRAISED PORK BELLY - spicy mayonnaise, iceberg lettuce ,cucumber, cilantro  $9
+                        %p
+                            SPICY CHICKEN - spicy mayonnaise, iceberg lettuce, cucumber, cilantro  $9
+                        %p
+                            BRAISED SHIITAKE MUSHROOM - hoisin sauce, scallion, cucumber (VEGAN)  $9
+                        %p
+                            GUA BAO - "Taiwanese Burger" Braised pork belly, cilantro, pickled mustard greens, pickled daikon/carrots and crushed peanuts  $11
 
-                    %p NITAMAGO — SOFT BOILED EGG 1.0
+                        %h4 Ramen Hot Spot*
+                        %p.small * Two person minimum per order
 
-                    %p NITAMAGO — SOFT BOILED EGG 1.0
+                        %p
+                            TONKOTSU - White, silky pork soup, pork belly, kikurage mushrooms, bokchoy, menma, nitamago, roasted sesame,  and scallions  $16
+                        %p
+                            MISO - Tonkotsu soup and miso, pork belly, miso grilled corn, roasted sesame, bean sprouts and scallions  $18
+                        %p
+                            SHOYU – Soy vegetable soup, fish cake, menma, scallions, nori, and bean sprouts, seasonal vegetables and lime  $16
+                        %p.small
+                            Vegan Option: Seasoned tofu
 
-                    %p NITAMAGO — SOFT BOILED EGG 1.0
 
-                    %p NITAMAGO — SOFT BOILED EGG 1.0
+
 
 
 
@@ -187,4 +396,9 @@
 
 
     %script{:rel => "javascript", :src => "https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"}
+    %script
+        $(document).ready(function() {
+        $('body').addClass('ready');
+        window.setTimeout(function(){$("body").addClass("delayed-now-ready");}, 1000);
+        });
 

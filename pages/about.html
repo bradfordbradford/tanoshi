@@ -15,7 +15,7 @@
   <meta content='http://tanoshiiramen.com/assets/images/logos-icons/og-image_tanoshi.png' property='og:image'>
   <link href='http://tanoshiiramen.com/assets/images/logos-icons/favicon.png' rel='icon' type='images/png'>
   <!-- Style -->
-  <link href='http://tanoshiiramen.com/assets/css/site.css' rel='stylesheet'>
+  <link href='../assets/css/site.css' rel='stylesheet'>
   <link href='http://tanoshiiramen.com/assets/fonts/ss-social/webfonts/ss-social.css' rel='stylesheet'>
   <!--[if lt IE 9 ]>
     <link href='http://tanoshiiramen.com/assets/css/ie.css' rel='stylesheet'>
@@ -61,7 +61,7 @@
           </li>
         </ul>
         <div class='location'>
-          <p class='sans'>
+          <p class='sans editable' id='editable-address'>
             2427 Commerce Street
             <br>
             Dallas, Texas 75226
@@ -74,7 +74,7 @@
   </section>
   <section id='site-content'>
     <div class='content-background'>
-      <img alt='Tanoshii' src='http://tanoshiiramen.com/assets/images/content/banner-3.jpg'>
+      <img alt='Tanoshii' src='http://tanoshiiramen.com/assets/images/content/about_img.jpg'>
       <header class='content-header'>
         <div class='content-header-inner'>
           <h2>
@@ -94,32 +94,34 @@
           <div class='content' data-section-content='' data-slug='ramenPanel'>
             <article class='content-copy-wrap'>
               <div class='content-copy'>
-                <h3>Ramen</h3>
-                <p>
-                  One thing that unites all backgrounds is the love of good food. From grandparents to food throwing toddlers, ramen is for everyone.  To enjoy ramen is to appreciate the Japanese culture and the history of this beautiful bowl of noodles.
-                </p>
-                <p>
-                  "Instant ramen?" Those are good, but no. In Japan, a bowl of ramen holds a house-made soup simmered for days with chewy, al dente noodles. No two bowls of ramen are alike. Every chef has his own seasoning and a limitless variety of toppings. Ramen allows the chef freedom to be creative and diverse.  Ramen is always changing because it is created with pure soul.  At Tanoshii, we like to call it the "Evolution of Ramen."
-                </p>
-                <p>
-                  Ramen originated in China, made its way to Japan after World War II and matured deeply there as well.  Today it is borrowed by numerous other countries.
-                </p>
-                <p>
-                  How do you eat ramen? An experienced ramen eater starts with the noodles, lifting them with chopsticks and sucking up the strands whole. Lots of slurping is required to pull this off, since biting noodles is considered unlucky as they represent longevity. As a child and till this day, I rotate my chopsticks full circle a few times to wrap my noodles almost halfway up allowing them to cool from sitting in piping hot broth.  I then engorge by the mouthful from the bottom of the chopsticks and work my way up.  In my home, this trick has been passed on to my 2 and 4 year old sons.  Between mouthfuls of noodles, the toppings are eaten. And last comes the broth, which grows richer and more flavorful as it cools, releasing  the ingredients of the noodles and toppings into the soup.
-                </p>
-                <p>
-                  Ramen is truly an art, as every bowl is made differently and every bowl is eaten in each person's own special way. This is what makes ramen enjoyable. This is Tanoshi Ramen.
-                </p>
-                <p>Lan Chi Le</p>
-                <p>Chef-owner,</p>
-                <p>Tanoshi Ramen</p>
+                <h3 class='editable' id='editable1'>Ramen</h3>
+                <div class='editable' id='editable2'>
+                  <p>
+                    One thing that unites all backgrounds is the love of good food. From grandparents to food throwing toddlers, ramen is for everyone.  To enjoy ramen is to appreciate the Japanese culture and the history of this beautiful bowl of noodles.
+                  </p>
+                  <p>
+                    "Instant ramen?" Those are good, but no. In Japan, a bowl of ramen holds a house-made soup simmered for days with chewy, al dente noodles. No two bowls of ramen are alike. Every chef has his own seasoning and a limitless variety of toppings. Ramen allows the chef freedom to be creative and diverse.  Ramen is always changing because it is created with pure soul.  At Tanoshii, we like to call it the "Evolution of Ramen."
+                  </p>
+                  <p>
+                    Ramen originated in China, made its way to Japan after World War II and matured deeply there as well.  Today it is borrowed by numerous other countries.
+                  </p>
+                  <p>
+                    How do you eat ramen? An experienced ramen eater starts with the noodles, lifting them with chopsticks and sucking up the strands whole. Lots of slurping is required to pull this off, since biting noodles is considered unlucky as they represent longevity. As a child and till this day, I rotate my chopsticks full circle a few times to wrap my noodles almost halfway up allowing them to cool from sitting in piping hot broth.  I then engorge by the mouthful from the bottom of the chopsticks and work my way up.  In my home, this trick has been passed on to my 2 and 4 year old sons.  Between mouthfuls of noodles, the toppings are eaten. And last comes the broth, which grows richer and more flavorful as it cools, releasing  the ingredients of the noodles and toppings into the soup.
+                  </p>
+                  <p>
+                    Ramen is truly an art, as every bowl is made differently and every bowl is eaten in each person's own special way. This is what makes ramen enjoyable. This is Tanoshi Ramen.
+                  </p>
+                  <p>Lan Chi Le</p>
+                  <p>Chef-owner,</p>
+                  <p>Tanoshi Ramen</p>
+                </div>
               </div>
             </article>
             <aside class='aside-background ramen'></aside>
           </div>
         </section>
-        <section>
-          <p class='title' data-section-title='street-food'>
+        <section class='active'>
+          <p class='title street-food-section' data-section-title='street-food'>
             <a class='title-control street-food' href='streetfoodPanel'>
               streetfood
             </a>
@@ -127,16 +129,18 @@
           <div class='content' data-section-content='' data-slug='streetfoodPanel'>
             <article class='content-copy-wrap'>
               <div class='content-copy'>
-                <h3>Street Food</h3>
-                <p>
-                  One of the most enjoyable things about the Asian continent is street food.  Many dishes originated in imperial palaces and have made its way to the streets.  Large cities have streets lined with hawker stalls while some of the most delightful foods can be found along dirt roads in the countryside.
-                </p>
-                <p>
-                  Many classic street foods are bite-sized and considered appetizers, such as Hakata gyoza, which are paired well with a bowl of ramen. Mandu, dumplings filled with kim chi and tofu, were once only a part of Korean royal court cuisine and are now found on the streets of Seoul.  Others are more filling, like curry based soups, stir fried noodles, and grilled barbecued meats.
-                </p>
-                <p>
-                  Street food is an integral part of the Asian culture and locals know that cuisine you'll find served on the sidewalk is often the tastiest. At Tanoshi, we bring you our experiences and the way we enjoy street food whether it's in a bowl, wrapped or skewered.
-                </p>
+                <h3 class='editable' id='editable3'>Street Food</h3>
+                <div class='editable' id='editable4'>
+                  <p>
+                    One of the most enjoyable things about the Asian continent is street food.  Many dishes originated in imperial palaces and have made its way to the streets.  Large cities have streets lined with hawker stalls while some of the most delightful foods can be found along dirt roads in the countryside.
+                  </p>
+                  <p>
+                    Many classic street foods are bite-sized and considered appetizers, such as Hakata gyoza, which are paired well with a bowl of ramen. Mandu, dumplings filled with kim chi and tofu, were once only a part of Korean royal court cuisine and are now found on the streets of Seoul.  Others are more filling, like curry based soups, stir fried noodles, and grilled barbecued meats.
+                  </p>
+                  <p>
+                    Street food is an integral part of the Asian culture and locals know that cuisine you'll find served on the sidewalk is often the tastiest. At Tanoshi, we bring you our experiences and the way we enjoy street food whether it's in a bowl, wrapped or skewered.
+                  </p>
+                </div>
               </div>
             </article>
             <aside class='aside-background streetfood'></aside>

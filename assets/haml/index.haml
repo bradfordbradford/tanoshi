@@ -64,7 +64,7 @@
                         %span location
 
             .location
-                %p.sans
+                %p#editable-address.sans.editable
                     2427 Commerce Street
                     %br/
                     Dallas, Texas 75226
@@ -78,8 +78,8 @@
 
     %header.content-header
         .content-header-inner
-            %h2.editable ramen
-            %p.editable Dolore McSweeney's aesthetic, American Apparel dolor gentrify ea raw denim. Anim Austin pour-over church-key PBR McSweeney's. Post-ironic 3 wolf moon tousled, sriracha exercitation quis Marfa meggings Pitchfork master
+            %h2#editable1.editable ramen
+            %p#editable2.editable Dolore McSweeney's aesthetic, American Apparel dolor gentrify ea raw denim. Anim Austin pour-over church-key PBR McSweeney's. Post-ironic 3 wolf moon tousled, sriracha exercitation quis Marfa meggings Pitchfork master
 
 
 
@@ -117,6 +117,14 @@
     %script{:rel => "javascript", :src => "http://tanoshiiramen.com/assets/js/backstretch.js"}
 
     %script
-        $.backstretch("http://tanoshiiramen.com/assets/images/content/banner-3.jpg");
+        // Preload the images
+        var images = [
+        "http://tanoshiiramen.com/assets/images/content/ramen_img.jpg"
+        ];
+        $(images).each(function(){
+        $("<img />")[0].src = this;
+        });
+        $.backstretch( images[0] );
+        / $.backstretch("http://tanoshiiramen.com/assets/images/content/banner-3.jpg");
 
 
